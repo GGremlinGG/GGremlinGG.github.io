@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Together Against Poverty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .donate-section {
+            background: #ecf0f1;
+        }
+
+        .donate-button {
+            background: #000000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .donate-button:hover {
+            background: #000000;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .flex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Together Against Poverty</h1>
+    <p>Creating hope. Building futures. Changing lives.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#impact">Our Impact</a>
+    <a href="#donate">Donate</a>
+</nav>
+
+<section id="about">
+    <div class="container">
+        <h2>About the Cause</h2>
+        <p>
+            Poverty is not just the absence of money; it is the quiet erosion of hope. It is the child who goes to sleep with an empty stomach, trying to ignore the ache that hunger brings. It is the parent who skips meals, working endlessly yet still unable to provide enough. Poverty steals choices, dignity, and opportunity, trapping families in a cycle that feels impossible to escape. It turns simple dreams—education, safety, a warm home—into distant luxuries. Behind every statistic is a human story filled with resilience and silent suffering. The weight of uncertainty hangs heavy: Will there be food tomorrow? Will the rent be paid? Will illness mean disaster? And yet, even in the harshest conditions, people hold onto fragments of hope. They cling to love, community, and the belief that life can change. Poverty is not a personal failure; it is a shared responsibility. Until we see it that way, its shadow will continue to fall across generations.
+        </p>
+    </div>
+</section>
+
+<section class="image-section">
+    <div class="container flex">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Child in poverty">
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Family struggling with poverty">
+    </div>
+</section>
+
+<section id="impact">
+    <div class="container">
+        <div class="card">
+            <h2>How We Help</h2>
+            <p>Provide emergency food supplies</p>
+            <p>Support education for children</p>
+            <p>Offer job training programs</p>
+            <p>Improve access to clean water</p>
+        </div>
+    </div>
+</section>
+
+<section id="donate" class="donate-section">
+    <div class="container">
+        <h2>Make a Difference Today</h2>
+        <p>Your donation can change someone's life.</p>
+
+        <button class="donate-button" onclick="donate(10)">Donate $10</button>
+        <button class="donate-button" onclick="donate(25)">Donate $25</button>
+        <button class="donate-button" onclick="donate(50)">Donate $50</button>
+        <button class="donate-button" onclick="donate(100)">Donate $100</button>
+    </div>
+</section>
+
+<footer>
+    <p>Horizon Science Academy Southwest Chicago
+    </p>
+</footer>
+
+<script>
+    function donate(amount) {
+        alert("Thank you for choosing to donate $" + amount + "! (Payment integration required)");
+    }
+</script>
+<section id="scratch-game" style="padding:50px 20px; text-align:center; background:#f9f9f9;">
+    <h2>Play Our Awareness Game</h2>
+    <p>Learn about poverty and how small actions can make a big difference.</p>
+
+    <iframe 
+        src=https://scratch.mit.edu/projects/1275760928 
+        allowtransparency="true" 
+        width="485" 
+        height="402" 
+        frameborder="0" 
+        scrolling="no" 
+        allowfullscreen>
+    </iframe>
+</section>
+</body>
+</html>
